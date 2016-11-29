@@ -89,7 +89,7 @@ app.get("/oauth/callback", function(req, res, next){
 	}).auth(clientId, clientSecret);
 });
 
-var port = 1234;
+var port = 80;
 app.listen(port, function () {
 	logger.info('Listening on', port);
 });
